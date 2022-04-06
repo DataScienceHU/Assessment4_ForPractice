@@ -6,6 +6,8 @@ output:
   pdf_document: default
 ---
 
+Second change (in solution) 
+
 Solution Starts here: 
 
 1. Write a function called `trim.mean` that takes as input a vector of numbers and a parameter $\alpha$, and returns the $\alpha$-trimmed mean of the vector. 
