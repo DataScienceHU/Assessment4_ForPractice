@@ -6,6 +6,8 @@ output:
   pdf_document: default
 ---
 
+Starting here: 
+
 1. Write a function called `trim.mean` that takes as input a vector of numbers and a parameter $\alpha$, and returns the $\alpha$-trimmed mean of the vector. 
 The function should check that the value of $\alpha$ is in the correct range $(0, 0.5)$.  
 You can compare to R function mean( , trim= ) to see that results are similar.  
