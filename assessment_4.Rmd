@@ -1,0 +1,63 @@
+---
+title: "Assessment 4"
+author: '52414'
+output:
+  html_document: default
+  pdf_document: default
+---
+
+1. Write a function called `trim.mean` that takes as input a vector of numbers and a parameter $\alpha$, and returns the $\alpha$-trimmed mean of the vector. 
+The function should check that the value of $\alpha$ is in the correct range $(0, 0.5)$.  
+You can compare to R function mean( , trim= ) to see that results are similar.  
+**Hint:** The functions floor() and ceiling() round up to the nearest integer below and above a certain value.   
+
+    **Solution:**
+```{r}
+trim.mean <- function(vec,alpha){
+  # This function performs alpha mean trim - orderes the 'vec' and trims a ratio
+  # of `alpha` from either sides of the vector.
+  #@param vec: vector, a list of numbers 
+  #@param alpha: double, a number between 0 and 0.5 (including)
+  
+  # Your code here:
+  
+}
+
+```
+
+2. Write a function called `my.mad` that takes as input a vector of numbers, and returns 
+the corrected median-absolute-deviation. That is, the estimator should be corrected such that 
+for Normal data as $n \to \infty$ the estimator converges to $\sigma$ the standard deviation. 
+You can compare to the **R** function `mad()` to see that results are similar.  
+
+
+    **Solution:**
+```{r}
+# robust standard deviation estimate
+my.mad <- function(x){
+
+  # Your code here:
+  
+}
+```
+  
+
+3. Analyze the world fertility rate data (average number of children per woman) obtained from the `gapminder` dataset which contains demographic data on world countries in different years:
+a. Create a new variable containing the fertility in $1960$ for every country and use it for the next sub-questions.
+b. Compute and show the mean and standard deviation for the fertility rate in $1960$.   
+c. Compare the fertility distribution to the Normal distribution by plotting together the data-density vs. the matching Normal density with the same first two moments. 
+d. Make a `qq-plot` comparing the data distribution and the above Normal distribution.    
+e. Does the distribution have a heavy tail? Is it skewed? compute and report the skewness and kurtosis parameters. 
+f. Compute robust estimates [trimmed-mean with $\alpha=0.05$, Inter-Quantile-Range (IQR) and MAD]; Compare these to the mean and standard deviation.
+
+    **Solution:**
+```{r}
+library(dslabs)
+library(tidyverse)
+library(e1071) # has skewness and kurtosis functions 
+
+data(gapminder) # load dataset
+
+  # Your code here:
+
+```
